@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<form enctype="multipart/form-data" method="post" action="process.php">
+	<form enctype="multipart/form-data" method="post" action="limpar_dados.php">
 		
 		<label>Senha</label>
 		<input type="text" name="password"> 
@@ -20,15 +20,6 @@
 		<input type="submit" name="enviar">
 
 		<br>
-
-		<?php
-			session_start();
-
-			if ($_SESSION["msg"]) {
-				echo $_SESSION["msg"];
-				$_SESSION["msg"] = null;
-			}
-		?>
 	</form>
 
 </body>
